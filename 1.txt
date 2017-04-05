@@ -1,0 +1,113 @@
+﻿Java 动态代理 静态代理 http://blog.csdn.net/heyutao007/article/details/49738887
+--jdk,cglib jdk是通过java反射机制实现必须基于统一的接口，cglib通过asm来实现可以不实现任何接口
+java反射机制
+--在运行状态中对于任意一个类都能知道他的属性和方法，对于任意一个对象都能知道他的属性和方法，这种动态的调用对象方法的功能就叫java的反射机制。
+--Class c1 = Class.forName("com.zoop.User");User user = c1.newInstance(); 
+spring 事物 数据库事务 分析 http://www.mamicode.com/info-detail-1248286.html
+--编程式事务（在业务中写代码），声明式事务(aop解耦)
+--四个特性：原子性，一致性，隔离性，持久性
+--传播行为：REQUIRED,SUPPORTS,MANDATORY,REQUIRED_NEW,NOT_SUPPORTED,NEVER,NESTED
+数据库索引有几种
+--唯一索引，非唯一索引(b树索引) 根据索引列的个数，单列索引，复合索引。
+--物理组织方式:b树索引，位图索引，函数索引，反向建索引，删除索引，重建索引
+union 和 union all区别 having用法
+sql语句优化
+--使用索引，不要使用select *,不要再索引列上使用like,is not null,减少访问数据库的次数，使用表的别名
+--
+怎样实现的分页
+--mysql limit,oracle rownum
+left join right join区别
+--left:返回左边表所有记录和右表字段相等的记录
+线程方式和区别继承Thread 实现Runnable接口  线程池
+--
+dubbo
+mybatis传递的参数有几种 #$区别
+--基本数据类型，java实体类map #传入的数据会当成字符串$传入的数据直接显示在sql中
+有多少注解举例@Controller,@Component,@Service,@Autowired,@RequestMapping,@ResponseBody,@Repository
+--@Autowired byType,@Resource byName
+list中哪个是线程安全的，HashTable HashMap区别 ArrayList LinkedList
+--vector hashmap不允许重复键，允许key和value是null线程不安全
+spring bean 的作用域
+--singleton prototype request session global session
+Redirect forword区别
+--转发和重定向转发是服务器请求资源共享request资源，重定向不能共享资源
+redis 都存储什么能存储什么类型
+--string list set hash
+hibernate二级缓存mybatis缓存
+hash冲突怎么办
+abstract和interface区别
+线程，线程池
+--synchronized关键字代码块和方法的区别
+数据库锁
+--为了处理并发问题，原子性，一致性，隔离性，持久性
+定时任务
+JSP中九大内置对象为: request、response、pageContext、session 、application、out 、config、page、exception
+http://blog.csdn.net/lfsf802/article/details/45399045
+Collection
+    ├List
+    │├LinkedList
+    │├ArrayList
+    │└Vector
+    │　└Stack
+    └Set
+    Map
+    ├Hashtable
+    ├HashMap
+    └WeakHashMap
+1596286
+java内存管理
+jvm
+set
+--不允许重复值，可以为空，使用iterator遍历因为数据锁定效率不高
+序列化
+arraylist linkedlist
+1.java反射原理
+--程序运行中知道类，就能得到属性和方法，知道对象就能调用所有的方法这种动态的
+观察者模式
+--它定义了一种一对多的依赖关系，多个观察者同时监听被观察者，当被观察者有变化时，会通知观察者进行更新。
+MQ消息队列
+2.看过什么书
+怎么处理hash冲突
+--链地址法，将hash地址相同的记录都存在同一个链表里
+3.jsp原理流程
+--服务器首先检查是不是第一次调用，如果是jsp引擎就将jsp转换成servlet，进行servlet的实例化然后调用最后销毁。
+索引有几种，怎样优化sql
+--唯一性索引，b树索引，尽量少用like会导致索引失效，使用索引避免对索引列处理，使用union代替union all,尽量不要使用select *
+--
+单选题
+线程的流程图和主要方法
+--新建，就绪，运行，死亡，阻塞(sleep,wait)
+线程主要的方法
+--run,start,sleep,wait,notify
+linux查看进程命令，查看log日志的命令，常用命令
+--tail,cat,tail -f m.log,ps -ef|grep    
+类加载顺序(静态常量，常量，静态方法，构造方法，一般方法)
+--静态常量和静态块，一般块，构造方法
+rpc通信，应用之间是怎么通讯的优缺点
+--应用之间通信webservice,http restful,socket
+怎样防钓鱼
+--操你妈
+数据库存储过程和函数
+--create procedure
+防止并发
+--synchronized,乐观锁，悲观锁
+mybatis标签有哪些是否继承
+有没有安全的hashMap
+--concurrentHashmap,volatile
+事务的传播性
+--required等
+范例123(说的是数据库表设计)
+--1无重复的键2属性依赖于主键3属性不依赖于非主属性
+--没有重复的列，属性依赖主键，属性不依赖其他非主键
+常用的设计模式
+--单例模式，工厂模式，观察者模式
+--懒汉模式(第一次调用方法时候才初始化实例)饿汉模式(加载类的时候就初始化类实例)
+地铁的例子(数据库表的设计)
+实践dubbo
+自己的项目
+list和set的区别
+--list有序的set无序(根据hash值来算，所以也是相对固定的)
+hashCode()方法的作用
+--方便查找
+map的实现原理
+--entry                   
