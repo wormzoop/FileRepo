@@ -1,4 +1,5 @@
-﻿Java 动态代理 静态代理 http://blog.csdn.net/heyutao007/article/details/49738887
+﻿++++++++尽量深入的看，回答的时候也深入的回答+++++++
+Java 动态代理 静态代理 http://blog.csdn.net/heyutao007/article/details/49738887
 --jdk,cglib jdk是通过java反射机制实现必须基于统一的接口，cglib通过asm来实现可以不实现任何接口
 java反射机制
 --在运行状态中对于任意一个类都能知道他的属性和方法，对于任意一个对象都能知道他的属性和方法，这种动态的调用对象方法的功能就叫java的反射机制。
@@ -115,4 +116,4 @@ hashCode()方法的作用
 --方便查找
 map的实现原理
 --entry
-线程共享内存，两个线程操作一个东西(redis)，消息队列,常见的异常                   
+线程共享内存，两个线程操作一个东西(redis)，消息队列,常见的异常，webservice                  
