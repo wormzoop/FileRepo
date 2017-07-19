@@ -1,4 +1,3 @@
-﻿++++++++尽量深入的看，回答的时候也深入的回答+++++++
 Java 动态代理 静态代理 http://blog.csdn.net/heyutao007/article/details/49738887
 --jdk,cglib jdk是通过java反射机制实现必须基于统一的接口，cglib通过asm来实现可以不实现任何接口
 java反射机制
