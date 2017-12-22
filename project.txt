@@ -2,3 +2,4 @@
 2.自动生成spring,mybatis代码
 3.仿spring IOC
 --web服务器(c版本)
+4.对象转json格式字符串,--json字符串转对象
