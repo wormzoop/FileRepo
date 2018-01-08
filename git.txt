@@ -1,7 +1,7 @@
 #创建新分支
-git checkout -b develop
-git push origin develop
-git branch --set-upstream-to=origin/develop
+git checkout -b zp
+git push origin zp
+git branch --set-upstream-to=origin/zp
 
 #develop合并到master
 git checkout master
